@@ -43,10 +43,6 @@ public class Service {
         return orders.findAllOrdersByStatus(OrderStatus.PREPARING);
     }
 
-    public Iterable<Order> findAllDeliveredOrders(){
-        return orders.findAllOrdersByStatus(OrderStatus.DELIVERED);
-    }
-
     public Iterable<Table> findAllTables(){
         return tables.findAllTables();
     }
